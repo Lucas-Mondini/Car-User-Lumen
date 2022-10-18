@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('license_plate');
             $table->integer('value', 0, true);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
